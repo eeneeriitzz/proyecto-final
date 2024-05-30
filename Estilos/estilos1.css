@@ -1,0 +1,717 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	
+}
+
+body{
+	font-family: georgia;
+	overflow-x: hidden;
+}
+
+/*FOOTER*/
+footer{
+	display: flex;
+	background-color: #3C4291;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+	overflow-y: hidden;
+}
+
+#arriba{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#abajo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* FIN FOOTER*/
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+}
+
+.nav-container {
+    background-color: #5c6dc3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10vh;
+}
+
+
+.nav-container div {
+	display: flex;
+	align-items: center;
+	overflow-y: hidden;
+}
+
+.nav-container h2 {
+	color: white;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	overflow-y: hidden;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.menu-icon {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: white;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	margin: 0;
+	font-size: large;
+}
+
+.header h2{
+	font-size: 30px;
+}
+
+@media (max-width: 768px) {
+	.menu-icon {
+		display: block;
+		color: white;
+	}
+
+	.menu {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		background-color: #5c6dc3;
+		position: absolute;
+		top: 90px;
+		left: 0;
+		z-index: 1;
+		padding-bottom: 5%;
+	}
+
+	.menu li {
+		text-align: center;
+	}
+
+	#menu-toggle:checked + .menu {
+		display: flex;
+	}
+}
+
+.header-content {
+	padding: 100px 20px; /* Asegura que el contenido no quede detrás del nav */
+	text-align: center;
+	background-color: #f4f4f4;
+}
+
+.header-content h1 {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.header-content p {
+	font-size: 1.2em;
+}
+
+.btn-1 {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #5c6dc3;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.btn-1:hover {
+	background-color: #5c6dc3;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f2f2f2;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        transform: translateX(0);
+    }
+
+    .navbar .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
+
+.carta{
+	padding: 30px;
+	background-color: white;
+	border-radius: 20px;
+	width: 70%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.header-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../Imagenes/animes.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	width: 100%;
+	height: 90vh;
+	margin-top: 4.9%;
+}
+
+
+
+.header-content h1{
+	font-size: 70px;
+	line-height: 80px;
+	color: #EE8D0A;
+}
+
+.header-content p{
+	font-size: 16px;
+	color: rgb(29, 29, 29);
+	
+}
+
+.btn-1{
+	display: inline-block;
+	padding: 11px 35px;
+	background-color: #5c6dc3;
+	color: #ffffff;
+}
+
+.btn-1:hover{
+	background-color: #4156c0;
+}
+
+.coffee{
+	padding: 100px 0;
+	background-color:#ffffff;
+	position: relative;
+}
+
+.coffee-content{
+	text-align: center;
+}
+
+.coffee-content h2{
+	font-size: 55px;
+	line-height: 70px;
+	color: deeppink;
+	padding: 0 250px;
+	margin-bottom: 15px;
+}
+
+.txt-p{
+	font-size: 16px;
+	color:#000000;
+	padding: 0 250px;
+	margin-bottom: 35px;
+}
+
+.coffee-group{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	padding-inline: 20%;
+	
+	
+}
+
+.coffee-1{
+	padding: 0 25px;
+	width: 33%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-bottom: 3%;
+	margin-inline: 1%;
+
+}
+
+.coffee-1 img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+.coffee-1 h3{
+	color: deeppink;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.coffee-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.services{
+	
+	background-color: #c1c1c1;
+}
+
+
+
+.services-content{
+	text-align: center;
+}
+
+.services-content h2{
+	font-size: 55px;
+	line-height: 70px;
+	color: deeppink;
+	;
+	margin-bottom: 50px;
+}
+
+.services-content p{
+	font-size: 16px;
+	color: blue;
+	margin-bottom: 50px;
+	padding: 0 100px;
+}
+
+.services-group{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.services-1{
+	padding: 0 100px;
+}
+
+.services-1 img{
+	width: 200px;
+	margin-bottom: 100px;
+}
+
+.services-1 h3{
+	color:#063309;
+	font-size: 18px;
+}
+
+.general{
+	display: flex;
+}
+
+.general1-1{
+	width: 50%;
+	padding: 100px 250px 100px 100px;
+	background-color: #679B9B;
+}
+
+.general1-2{
+	background-image: url();
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.general1-3{
+	background-image: url();
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+
+h2{
+	font-size: 55px;
+	line-height: 70px;
+	color: deeppink;
+	margin-bottom: 20px;
+}
+
+h3{
+	color:azure;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+p{
+	font-size: 16px;
+	color:#000000;
+}
+
+
+.footer{
+	padding: 100px 0;
+	background-color: #5c6dc3;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Estilos para el menú responsive */
+.nav-container {
+    background-color: #5c6dc3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10vh;
+}
+
+.nav-container h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0;
+    font-size: large;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        background-color: #5c6dc3;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav .menu {
+        display: flex;
+    }
+	.arriba {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.abajo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+
+@media(max-width:991px){
+	.menu{
+		padding: 30px;
+	}
+
+	.ocultar{
+		display: none;
+	}
+
+	.carta h1{
+		font-size: 60px !important;
+	}
+	
+	.menu label{
+		display: initial;
+	}
+	
+	.menu navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: yellow;
+		display: none;
+	}
+	
+	.menu .navbar ul li{
+		width: 100%;
+	}
+	
+	#menu:checked ~ .navbar{
+		display: initial;
+	}
+	
+	.header{
+		min-height: 0vh;
+	}
+	
+	.header-content{
+		padding: 100px 30px;
+	}
+	
+	.header-content p{
+		padding: 0;
+	}
+	
+	.coffee{
+		padding: 30px;
+	}
+	
+	.coffee-content h2{
+		padding: 0;
+	}
+	
+	.txt-p{
+		padding: 0;
+	}
+	
+	.coffee-group{
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	
+	.coffee-img{
+		display: none;
+	}
+	
+	.services{
+		padding: 30px;
+	}
+	
+	.services-content p{
+		padding: 0;
+	}
+	
+	.services-group{
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	
+	.services-1{
+		margin-bottom: 25px;
+	}
+	
+	.general{
+		flex-direction: column;
+	}
+
+	.coffee-1{
+		padding-inline: 7;
+		margin: 7%;
+		width: 100%;
+		margin-bottom: 2rem;
+		
+	}
+	
+	.general-1{
+		width: 100%;
+		padding: 30px;
+		text-align: center;
+	}
+	
+	.general-2, .general-3{
+		display: none;
+	}
+	
+
+	
+	.footer{
+		padding: 30px;
+	}
+	
+	.footer-content{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer{
+		display: flex;
+	flex-direction: column;
+	}
+
+	.arriba {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.abajo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+.columna-redes{
+display: flex;
+flex-direction: column;
+}
+.fila-redes{
+	display: flex;
+	flex-direction: row;
+}
+
+footer img{
+	width: 100px;
+}
+
+
+

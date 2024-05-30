@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #A2A2A2;
+}
+
+h1{
+	text-decoration: underline;
+	color:#970057;
+}
+
+h3{
+	color: #0F3775;
+	
+}
+
+pl, li{
+	font-style: italic;
+	color: #400885;
+}
+
+center{
+	text-align: right;
+	margin-right: 250px;
+}
